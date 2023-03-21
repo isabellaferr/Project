@@ -1,0 +1,193 @@
+/********* GENERAL ********/
+* {
+
+	box-sizing: border-box;
+}
+html {
+	font-size: 62.5%;
+}
+
+body{
+	    font-family: 'Open Sans', sans-serif;
+font-size: 1.6rem;
+}
+
+a {
+	text-decoration: none;
+	font-size: 1.4rem;
+}
+
+.container {
+	max-width: 900px;
+	margin: 0 auto;
+	padding: 0 15px;
+
+}
+
+.active {
+	background: #0ACE99;
+	border-radius: 3px;
+}
+
+img {
+	width: 100%;
+}
+ 
+
+ 
+/********* HEADER ********/
+header
+{ background: #32a889;
+	text-align: center ;
+}
+header .logo-cointainer {
+	padding: 20px;
+}
+
+header img {
+	width: 160px;
+}
+/********* NAVIGATION ********/
+ nav
+ {background:#0d9b75;
+ 	padding: 10px;
+ }
+
+ nav ul {
+ 	margin: 0;
+ 	padding: 0;
+ 	list-style-type: none;
+ }
+
+nav li {
+	display: inline-block;
+}
+nav li a {
+	color: #fff;
+	display: inline-block;
+	padding: 5px 10px;
+	text-transform: uppercase;
+	
+}
+
+ footer img
+ { width:40px;
+ 	padding: 5px 10px;
+ 	float: left;
+}
+/********* GALLERY ********/
+
+#gallery {
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+#gallery img {
+	width: 100%;
+}
+
+#gallery .item {
+	float: left;
+	width: 50%;
+	padding: 15px;
+}
+
+#gallery .item:nht-child(4) {
+clear: left;
+}
+#gallery .caption p {
+	margin: 0;
+}
+
+#gallery .picture {
+	line-height: 0;
+}
+
+
+/****** ABOUT ******/
+
+#about img {
+	border-radius: 100%;
+	padding: 25px 0;
+}
+
+ /****** FOOTER ******/
+
+ footer.main {
+ 	text-align: center;
+padding: 15px;
+ }
+ footer .main img {
+ 	width: 25px;
+ }
+
+footer .main a {
+display: inline-block;
+padding: 5px 10px;
+}
+
+footer .main p {
+	font-size: 1.2rem;
+}
+
+@media only screen and (min-width: 768px) {
+
+/********* GALLERY ********/
+
+#gallery .item {
+	width: 33.3333%;
+	
+}
+
+#gallery .item:nht-child(3n + 1) {
+clear: left;
+}
+/********* ABOUT  ********/
+
+#about h1 { 
+font-size:2.2rem;}
+
+#about img {
+	width: 70%;
+}
+
+
+#about .profile-pic {
+	float: left;
+	width: 50%;
+	padding: 15px;
+	text-align: center;
+}
+
+#about .description {
+	float: right;
+	width: 50%;
+	padding: 30px 15px 15px;
+}
+}
+@media only screen and (min-width: 992px){
+	nav li a {
+		transition: background .3%;
+	}
+	nav li a:hover {
+		background:#0ACE99;
+		border-radius:3px;
+	}      
+	
+#gallery .item {
+	transition: opacity: .3%;
+}
+
+	#gallery .item hover {
+	opacity: .7;
+	
+}
+}
+
+@media only screen and (max-width: 767px){
+	/********* GALLERY ********/
+	#gallery .item:nht-child(2n+1) {
+clear: left;
+}
+
+}
